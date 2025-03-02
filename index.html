@@ -1,0 +1,208 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leanna's Portfolio</title>
+
+    <Style>
+        body{
+            background-color: rgb(24, 56, 98);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        h1{  
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+        }
+        img{
+            width:200px;
+            border-radius: 20px;;
+        }
+
+        .container {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .skills-section {
+            margin-top: 40px;
+        }
+
+        h2{
+            font-size: 25px;
+            font-weight: bold;
+           
+        }
+
+        h3{
+            font-size: 15px;
+            
+        }
+        a{
+            color: white;
+        }
+        .skills-section, .projects-section, .services-section, .contact-section{
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .skills-container, .projects-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:20px;
+            flex-wrap: wrap;
+        }
+
+        .skills-item,
+        .projects-item{
+            flex: 1;
+            border-radius: 10px;
+        }
+
+        .skills-item img{
+            width:100px;
+            height:100px;
+        }
+
+        .projects-item img{
+            width:220px;
+            height:200px;
+            margin-bottom: 20px;
+        }
+
+        .services-section p {
+            text-align: start;
+        }
+
+        .contact-items img{
+            height: 20px;
+            width: 20px;
+            border-radius: 0px;
+        }
+
+        .contact-items a {
+            text-decoration: none;
+        }
+    </Style>
+</head>
+
+<body>
+    <h1>Leanna's Portfolio</h1>
+    <div class="container">
+        <p>
+            I’m a passionate UX/UI Designer and Front-End Developer with a background in Computer Science. I enjoy creating user-friendly designs and building websites and applications that are both functional and visually engaging.
+    
+            I graduated with a 1st class Bachelor’s degree in Computer Science from the University of Hull, where I developed solid foundations in programming, software development, and user experience design.
+            
+            I love designing in Figma, bringing ideas to life through clean and intuitive interfaces. On the development side, I enjoy working with tools like React, Flutter, HTML/CSS, and I’m always excited to explore new technologies.
+            
+            In the future, I aspire to become a Front-End/Full Stack Software Developer at a company where I can combine my skills in UX design and development to create seamless experiences.
+        </p>
+        <img src="./Images/LeannaR.jpg"/>
+    </div>
+
+    <div class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-item">
+                <img src="./Images/html.png" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+            <div class="skills-item">
+                <img src="./Images/JS.png" alt="JS">
+                <h3>JS</h3>
+            </div>
+            <div class="skills-item">
+                <img src="./Images/CSS.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+            <div class="skills-item">
+                <img src="./Images/Flutter.png" alt="Flutter">
+                <h3>FLUTTER<h3>
+            </div>
+            <div class="skills-item">
+                <img src="./Images/Figma.png" alt="Figma">
+                <h3>FIGMA</h3>
+            </div>
+            <div class="skills-item">
+                <img src="./Images/React.png" alt="React">
+                <h3>REACT</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="projects-item">
+                <img src="./Images/Big-Feelings.png" alt="Big-Feelings-Project">
+                <h3>Big Feelings</h3>
+                <a href="https://big-feelings-project-1234.web.app/">Live</a>
+                <a href="https://github.com/LeannaJane/BigFeelings">Code</a>
+            </div>
+               <div class="projects-item">
+                <img src="./Images/Calculator.png" alt="Calculator">
+                <h3>Calculator</h3>
+                <a href="https://github.com/LeannaJane/Calculator-App">Code</a>
+            </div>
+               <div class="projects-item">
+                <img src="./Images/Eatify.png" alt="Eatify">
+                <h3>EATIFY</h3>
+                <a href="https://github.com/LeannaJane/eatify">Code</a>
+                <a href="https://www.figma.com/design/uaABnfLBcmBVN1UNbQa3yz/Untitled?node-id=0-1&p=f&t=C7VC1UQ5v32TBsVb-0/"><data value="Design"></data></a>
+            </div>
+            <div class="projects-item">
+                <img src="./Images/Management-app.png" alt="Management-app">
+                <h3>Management app</h3>
+                <a href="https://github.com/LeannaJane/Management-Tool">Design</a>
+            </div>
+            <div class="projects-item">
+                <img src="./Images/Weather generator.png" alt="Weather-generator">
+                <h3>Weather Generator</h3>
+                <a href="https://github.com/LeannaJane/Weather-generator">Code</a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="services-section">
+        <h2>Services</h2>
+        <p>I offer a range of services aimed at providing quality UX/UI design, web design, web development, front-end development, and user experience design solutions. Whether you need a visually engaging website, a functional web application, or a seamless user interface, I can help bring your vision to life. My goal is to ensure that your project not only looks great but also works efficiently, providing a user-centered experience that meets your business needs.</p>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-items">
+            <a href="https://www.linkedin.com/in/leanna-r-06a818300/"> 
+                <img src="./Images/Linkedin.png" alt="linkedin"/>
+                <span>Linkedin</span>
+            </a>
+        </div>
+        <div class="contact-items">
+            <a href="https://github.com/LeannaJane">  
+                <img src="./Images/Github-white.png" alt="linkedin"/>
+                <span>Github</span>
+            </a>
+        </div>
+        <div class="contact-items">
+            <a href="mailto:leanna.ux@outlook.com">  
+                <img src="./Images/Outlook.png" alt="Outlook"/>
+                <span>Outlook</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
